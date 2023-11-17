@@ -30,14 +30,15 @@ def versionName() {
 
 allprojects {
     apply plugin: 'idea'
-    version = versionName()
+    version = "0.3.0.37524-lh"
 
     ext.androidBuildVersionTools = "30.0.3"
 
-    ext.appVersionCode = versionCode()
-    ext.androidCompileSdk = 30
+    ext.appVersionCode = 83762400
+    ext.androidCompileSdk = 33
     ext.androidTargetSdk = 29
-    ext.androidMinSdk = 9
+    ext.androidMinSdk = 21
+    ext.iapVersion = "1.0.3"
 }
 
 subprojects {
@@ -45,6 +46,7 @@ subprojects {
     repositories {
         mavenCentral()
         google()
+        maven { url 'https://jitpack.io' }
     }
 }
 

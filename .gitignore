@@ -7,3 +7,4 @@ build/
 user.gradle
 local.properties
 *.iml
+/local-repo/
