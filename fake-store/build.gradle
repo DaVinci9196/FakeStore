@@ -24,7 +24,7 @@ android {
 
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
@@ -36,7 +36,7 @@ android {
 }
 
 dependencies {
-    implementation "com.github.DaVinci9196:OpenIAP:$iapVersion"
+    implementation("com.github.DaVinci9196:OpenIAP:$iapVersion") { changing = true }
 }
 
 if (file('user.gradle').exists()) {
