@@ -36,6 +36,7 @@ android {
 }
 
 dependencies {
+    implementation project(':hw-signature-diff')
     implementation("com.github.DaVinci9196:OpenIAP:$iapVersion") { changing = true }
 }
 

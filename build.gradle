@@ -30,11 +30,11 @@ def versionName() {
 
 allprojects {
     apply plugin: 'idea'
-    version = "0.3.0.37524-lh"
+    version = "0.2.1"
 
     ext.androidBuildVersionTools = "30.0.3"
 
-    ext.appVersionCode = 83762400
+    ext.appVersionCode = 83701034
     ext.androidCompileSdk = 33
     ext.androidTargetSdk = 29
     ext.androidMinSdk = 21
