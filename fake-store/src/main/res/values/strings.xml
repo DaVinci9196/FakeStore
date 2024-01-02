@@ -1,9 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
   ~ SPDX-FileCopyrightText: 2014 microG Project Team
   ~ SPDX-License-Identifier: Apache-2.0
   -->
 
 <resources>
     <string name="app_name">microG Companion</string>
+    <string name="no_app_to_open_link">No app available to open link</string>
+    <string name="hint">Hint</string>
+    <string name="hint_download_app">You have not installed the corresponding App. You need to download it before you can use this function.</string>
 </resources>

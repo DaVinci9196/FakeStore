@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ SPDX-FileCopyrightText: 2014 microG Project Team
+  ~ SPDX-License-Identifier: Apache-2.0
+  -->
+
+<resources>
+    <string name="app_name">microG Companion</string>
+    <string name="no_app_to_open_link">No hay ninguna aplicación disponible para abrir el enlace</string>
+    <string name="hint">Pista</string>
+    <string name="hint_download_app">No has instalado la aplicación correspondiente. Debes descargarla antes de poder utilizar esta función.</string>
+</resources>

@@ -13,6 +13,21 @@
         android:icon="@mipmap/ic_app"
         android:label="@string/app_name">
 
+        <activity
+            android:name="org.microg.vending.ui.MarketDeepLinkHandlerActivity"
+            android:enabled="true"
+            android:exported="true"
+            android:theme="@style/Theme.Translucent"
+            android:taskAffinity=":instant_launcher" android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="market" android:host="details"/>
+            </intent-filter>
+
+        </activity>
+
         <activity android:name="org.microg.vending.ui.MainActivity">
         </activity>
 
@@ -1252,7 +1267,7 @@
 
         <meta-data android:name="NAVI142" android:value="768BEBAC8D5FBB5432E7685F6216F1A73686BA6D44D16B470846186FE4C27F73-A81BC2054DE58748A3EDFAF588696C4AE6C634D8657292A3636BF59F4D640708"/>
 
-        <meta-data android:name="NAVI143" android:value="452F8BC3446E1A89BFF1F3AF6F074D74D45C112611AC0682407D3EFC6DB1D769-AD820DB4F0993EAE2E109BAE6965B3B41DBAF8C4EA6E794848E6719B36956C6D"/>
+<!--        <meta-data android:name="NAVI143" android:value="452F8BC3446E1A89BFF1F3AF6F074D74D45C112611AC0682407D3EFC6DB1D769-AD820DB4F0993EAE2E109BAE6965B3B41DBAF8C4EA6E794848E6719B36956C6D"/>-->
 
         <meta-data android:name="NAVI144" android:value="6739682F9E1F98AE3CA17D2DA22AD9007565425B236B2A4EA6C0850FA116CC04-7DFA5B5BFCB15F8D73F08411FA9224A257355427AADFF42DEF4C8AA72BBAF377"/>
 
@@ -1395,4 +1410,26 @@
             </intent-filter>
         </service>
     </application>
+
+    <key-sets>
+        <!-- current old signature -->
+        <key-set android:name="sign1">
+            <public-key
+                android:name="sign1Key"
+                android:value="MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEApEfbf+xGax1JcbkCyUcYqWrNwU8nF0zVaJFecOLnxrw1ggy4UZ1cjJD6jLuhiuF40IEhwCX8UoLnNVRBMablX0plqYCjLq1633lUUNLjFR5EaKYR7VXMfL2yv3nouU7Vx0QISwgguoxEn7gY+DaxbPWMRFYL/4WhNM20M2K1NUFtoe/LiBq7GoSG72xZULYRKpz6aIMdm0/b/3g6p/mJPDZOAArdU9KqH/4L3qeXTB85H6hrSMIEIve2Q9bvp5OVNn5g1G4+yFo7+Fdc6MWGAnLypoDkmnKLDf+1coaW2aWc+Ifzq0ShBhDOOTQlrmgJHdNzktKCoJQp1ECPChmtRwIDAQAB"/>
+        </key-set>
+
+        <!-- new signature -->
+        <key-set android:name="sign2">
+            <public-key
+                android:name="sign2Key"
+                android:value="MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmo0qUzaw6qrYnORHgox3U7FXRZt54yFdyWLKSPWMLNdlDfZ9Lde9oIgMaCeR8ys1xQTkPne0PD5OVB+G41qCk6VPtG5rFq9U06TtpFjxp8i8G3R5hhynBDM3GA5AB52c3Mt+BRram2yIyexjVUHi6/CEJSHDAkyCb2/W22/RF8dOhZ1a9NsERIllq1RptxznGZOaBu8wWA9Q/r+WxHSn0mW7Y/hqgi/3tkPea3bpZqGFU8KFhBbPMwndJCeDdL3YK0QE729/Eizsk4WTUfxuXqlH48651nN0/pcOWT5c0FyQXh0k9aVIT0qt73ZuSYrfZPfPBL3dYCroE3tu6kByLQIDAQAB" />
+        </key-set>
+
+        <upgrade-key-set
+            android:name="sign1" />
+
+        <upgrade-key-set
+            android:name="sign2" />
+    </key-sets>
 </manifest>
