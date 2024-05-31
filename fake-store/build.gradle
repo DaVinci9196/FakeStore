@@ -37,6 +37,7 @@ android {
 
 dependencies {
     implementation("com.github.DaVinci9196:OpenIAP:$iapVersion") { changing = true }
+    implementation 'androidx.annotation:annotation-jvm:1.7.1'
 }
 
 if (file('user.gradle').exists()) {
