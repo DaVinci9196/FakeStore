@@ -4,6 +4,8 @@
  */
 
 apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'com.squareup.wire'
 
 android {
     namespace "com.android.vending"
@@ -33,11 +35,28 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+
+    kotlinOptions {
+        jvmTarget = 1.8
+    }
+    composeOptions {
+        kotlinCompilerExtensionVersion '1.5.10'
+    }
 }
 
 dependencies {
     implementation("com.github.DaVinci9196:OpenIAP:$iapVersion") { changing = true }
     implementation 'androidx.annotation:annotation-jvm:1.7.1'
+    implementation "com.android.volley:volley:1.2.1"
+    implementation "com.squareup.wire:wire-grpc-client:4.8.0"
+    implementation "com.squareup.wire:wire-runtime:4.8.0"
+    implementation "androidx.core:core-ktx:1.12.0"
+}
+
+wire {
+    kotlin {
+        javaInterop = true
+    }
 }
 
 if (file('user.gradle').exists()) {
