@@ -4,12 +4,15 @@
  */
 
 buildscript {
+    ext.wireVersion = '4.8.0'
+    ext.volleyVersion = '1.2.1'
     repositories {
         mavenCentral()
         google()
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:8.0.1'
+        classpath "com.squareup.wire:wire-gradle-plugin:$wireVersion"
     }
 }
 

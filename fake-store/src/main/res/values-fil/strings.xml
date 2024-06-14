@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="license_notification_ignore">Huwag pansinin</string>
+    <string name="app_name">Kasamahan ng microG</string>
+    <string name="license_notification_channel_name">Mga notification ng lisensya</string>
+    <string name="license_notification_channel_description">Aabisuhan kapag sinusubukan ng isang app na patunayin ang lisensya, ngunit hindi ka naka-sign in sa anumang Google account.</string>
+    <string name="license_notification_title">Hindi mapatunay ng %1$s ang lisensya</string>
+    <string name="license_notification_body">Kung hindi gumagana ang app, mag-sign in sa isang Google account kung saan mo binili ang app.</string>
+    <string name="license_notification_sign_in">Mag-Sign In</string>
+</resources>

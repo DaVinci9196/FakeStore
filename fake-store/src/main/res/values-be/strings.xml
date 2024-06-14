@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="license_notification_title">%1$s не можа праверыць ліцэнзію</string>
+    <string name="license_notification_body">Калі прыкладанне працуе няправільна, увайдзіце ва ўліковы запіс Google, з дапамогай якой вы купілі дадатак.</string>
+    <string name="license_notification_sign_in">Увайсці</string>
+    <string name="license_notification_ignore">Ігнараваць</string>
+    <string name="license_notification_channel_name">Паведамлення ліцэнзій</string>
+    <string name="license_notification_channel_description">Паведамляе, калі прыкладанне спрабуе праверыць сваю ліцэнзію, але вы не ўвайшлі ні ў адзін уліковы запіс Google.</string>
+    <string name="app_name">microG Companion</string>
+</resources>

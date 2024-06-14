@@ -8,7 +8,14 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <permission android:name="com.android.vending.CHECK_LICENSE" android:protectionLevel="normal"/>
+    <uses-permission
+        android:name="android.permission.GET_ACCOUNTS"
+        android:maxSdkVersion="22" />
     <uses-permission android:name="android.permission.FAKE_PACKAGE_SIGNATURE"/>
+    <uses-permission android:name="org.microg.gms.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.google.android.gms.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
 
     <queries>
         <intent>
