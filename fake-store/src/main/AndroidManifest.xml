@@ -28,7 +28,6 @@
                 android:host="play.google.com" />
         </intent>
     </queries>
-    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
     <application
         android:forceQueryable="true"
         android:icon="@mipmap/ic_app"

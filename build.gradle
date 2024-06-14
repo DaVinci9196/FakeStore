@@ -9,9 +9,7 @@ buildscript {
         google()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:8.2.2'
-        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.9.22"
-        classpath "com.squareup.wire:wire-gradle-plugin:4.8.0"
+        classpath 'com.android.tools.build:gradle:8.0.1'
     }
 }
 
@@ -37,7 +35,7 @@ allprojects {
     ext.androidBuildVersionTools = "30.0.3"
 
     ext.appVersionCode = 83762402
-    ext.androidCompileSdk = 34
+    ext.androidCompileSdk = 33
     ext.androidTargetSdk = 29
     ext.androidMinSdk = 21
     ext.iapVersion = "1.0.6"
